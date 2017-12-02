@@ -184,6 +184,10 @@ ul {
   line-height: 16px;
 }
 
+.search {
+  position: relative;
+}
+
 .search:hover .search-block {
   display: block;
 }
@@ -207,43 +211,40 @@ ul {
   left: 7px;
   width: 17px;
   height: 17px;
-}
-
-.search-icon-link .search-svg {
-  fill: white;
-}
-
-.search-icon-link:hover .search-svg {
-  fill: black;
+  background-image: url("../img/lens.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
 .search-block {
+  position: absolute;
   display: none;
-  position: relative;
-  top: 15px;
-  left: 10px;
+  top: 35px;
+  right: 16px;
   z-index: 1;
 }
 
 .search-icon-form {
   width: 340px;
-  height: 85px;
-  margin: 0 auto;
+  height: 40px;
+  padding: 20px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 50px black;
 }
 
 .search-text {
-  width: 85%;
+  width: 340px;
+  height: 30px;
   font-size: 14px;
-  height: 24px;
-  padding: 2px 5px;
-  margin: 20px;
   color: #999999;
   border: 1px solid #cccccc;
   border-radius: 3px;
+}
+
+.enter {
+  position: relative;
 }
 
 .enter:hover .enter-block {
@@ -256,6 +257,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   text-decoration: none;
+
 }
 
 .enter-link::before {
@@ -265,6 +267,9 @@ ul {
   position: absolute;
   top: 7px;
   left: 7px;
+  background-image: url("../img/lenswhite.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -273,27 +278,20 @@ ul {
   color: black;
 }
 
-.enter-link .enter-svg {
-  fill: white;
-}
-
-.enter-link:hover .enter-svg {
-  fill: black;
-}
-
 
 .enter-block {
   display: none;
   position: absolute;
-  top: 60px;
-  left: 822px;
+  top: 36px;
+  right: 3px;
   z-index: 1;
 }
 
 .form-enter-in {
-  width: 278px;
-  height: 215px;
+  width: 248px;
+  height: 185px;
   margin: 0 auto;
+  padding: 15px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 50px black;
@@ -375,13 +373,10 @@ ul {
   position: absolute;
   top: 7px;
   left: 7px;
+  background-image: url("../img/lenswhite.png");
+  background-position: center;
 }
 
-
-.cart-link:hover::before,
-.cart-link:focus::before {
-  fill: black;
-}
 
 .phones {
   display: flex;
