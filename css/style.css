@@ -194,8 +194,8 @@ ul {
 
 .search-icon-link {
   position: relative;
-  padding: 9px;
-  margin: 10px;
+  padding: 8px 15px;
+  margin: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
@@ -211,6 +211,12 @@ ul {
   left: 7px;
   width: 17px;
   height: 17px;
+  background-image: url("../img/lens2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-icon-link:hover::before {
   background-image: url("../img/lens.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -267,11 +273,17 @@ ul {
   position: absolute;
   top: 7px;
   left: 7px;
-  background-image: url("../img/lenswhite.png");
+  background-image: url("../img/enter.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+
+.enter-link:hover::before {
+  background-image: url("../img/enter2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .enter-link:hover {
   background-color: #ffffff;
@@ -359,8 +371,8 @@ ul {
 
 .cart-link {
   position: relative;
-  padding: 7px 20px;
-  margin-left: 20px;
+  padding: 7px 25px;
+  margin: 20px;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
@@ -373,8 +385,13 @@ ul {
   position: absolute;
   top: 7px;
   left: 7px;
-  background-image: url("../img/lenswhite.png");
+  background-image: url("../img/cart2.png");
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.zero {
+  margin-left: 10px;
 }
 
 
