@@ -557,26 +557,32 @@ body > input[type="radio"] {
 }
 
 .banner {
-  display: flex;
   margin-top: 40px;
-
 }
 
 .banner-wrapper {
   display: flex;
 }
 
+
 .banner-left {
+  display: flex;
+  flex-flow: column;
+  min-height: 230px;
+  padding: 15px;
+  margin-right: 26px;
   background-image: url("../img/raspberrytheme.png");
-  background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
 
 }
 
 .banner-right {
+  display: flex;
+  flex-flow: column;
+  min-height: 230px;
+  padding: 15px;
   background-image: url("../img/shokotheme.png");
-  background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
@@ -586,22 +592,23 @@ body > input[type="radio"] {
   font-size: 34px;
   font-weight: 700;
   line-height: 41px;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin: 0;
+
 }
 
 .banner-text {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  margin-left: 20px;
+  padding-bottom: 30px;
+
 
 }
 
 .btn-banner {
   display: inline-block;
-  padding: 12px 20px;
-  margin: 30px;
+  align-self: flex-end;
+  padding: 9px 12px;
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -618,6 +625,7 @@ body > input[type="radio"] {
 
 .items {
   display: flex;
+  margin-bottom: 60px;
 }
 
 .item-wrapper {
@@ -659,20 +667,24 @@ body > input[type="radio"] {
 
 .hit-description {
   position: absolute;
+  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 
 
 .seo {
+  display: flex;
+  flex-flow: column;
+  min-height: 310px;
   color: #323232;
   font-size: 16px;
   line-height: 22px;
   background-image: url("../img/waffletheme.png");
-  background-position: top center;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
@@ -680,6 +692,7 @@ body > input[type="radio"] {
 .seo-title {
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 
 .seo-left {
