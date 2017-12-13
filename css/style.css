@@ -625,12 +625,10 @@ body > input[type="radio"] {
 
 .items {
   display: flex;
-  margin-bottom: 60px;
 }
 
 .item-wrapper {
   display: flex;
-  margin-top: 40px;
 }
 
 .item {
@@ -679,7 +677,7 @@ body > input[type="radio"] {
 
 .seo {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   min-height: 310px;
   color: #323232;
   font-size: 16px;
@@ -687,38 +685,131 @@ body > input[type="radio"] {
   background-image: url("../img/waffletheme.png");
   background-repeat: no-repeat;
   border-radius: 10px;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.seo-wrapper {
+  display: flex;
 }
 
 .seo-title {
   font-size: 24px;
   line-height: 30px;
   margin: 0;
+
 }
 
 .seo-left {
   display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+
+.ice-icon {
+   position: relative;
+
+ }
+
+.ice-icon::before {
+  content: "";
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-image: url("../img/ice-icon.png");
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.leaf-icon {
+  display: flex;
+  position: relative;
+
 
 }
+
+.leaf-icon::before {
+  content: "";
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-image: url("../img/leaf.png");
+  background-repeat: no-repeat;
+  color: black;
+}
+
+
 
 .seo-right {
   display: flex;
+  flex-direction: column;
+}
 
+.cow-icon {
+   position: relative;
+ }
+
+.cow-icon::before {
+  content: "";
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-image: url("../img/cow.png");
+  background-repeat: no-repeat;
+}
+
+.therm-icon {
+  display: flex;
+  position: relative;
+}
+
+.therm-icon::before {
+  content: "";
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-image: url("../img/therm.png");
+  background-repeat: no-repeat;
 }
 
 .news {
+  margin-bottom: 40px;
+}
+
+.news-wrapper {
   display: flex;
+  flex-flow: column;
+}
+
+.news-blog {
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
   background-image: url("../img/strawberrytheme.png");
-  background-position: left;
   background-repeat: no-repeat;
   border-radius: 10px;
-  margin-right: 20px;
+  padding: 10px;
+  margin-right: 26px;
 }
 
 .blog-title {
   font-size: 16px;
-  font-weight: 500;
   line-height: 22px;
   color: #5a5a5a;
+  margin: 0;
 }
 
 .blog-link {
@@ -726,10 +817,14 @@ body > input[type="radio"] {
   line-height: 30px;
   text-decoration: underline;
   color: #353535;
+  padding-top: 10px;
+
 }
 
 .newsletter {
   display: flex;
+  flex-direction: column;
+
 }
 
 .letters-title {
@@ -745,7 +840,7 @@ body > input[type="radio"] {
   text-decoration: none;
 
   display: inline-block;
-  padding: 12px 50px;
+  padding: 5px 12px;
 
   background: #f26843;
   background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
