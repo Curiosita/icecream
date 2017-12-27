@@ -87,7 +87,7 @@ ul {
   position: relative;
   padding-left: 0;
   margin-left: 10px;
-  margin-right: 250px;
+  margin-right: 180px;
 }
 
 .main-nav-link {
@@ -399,7 +399,11 @@ ul {
   background-repeat: no-repeat;
 }
 
-.zero {
+.cart-list {
+  display: none;
+}
+
+.cart-text {
   margin-left: 10px;
 }
 
@@ -653,7 +657,8 @@ body > input[type="radio"] {
 .item-wrapper {
   margin: 0;
   padding: 0;
-  min-height: 450px;
+  margin-right: 8px;
+  margin-bottom: 90px;
 }
 
 .item-wrapper:hover {
@@ -663,21 +668,25 @@ body > input[type="radio"] {
   border-radius: 5px;
   background: rgba(255, 255, 255, .2);
   box-shadow: 2px 20px 30px 5px rgba(0, 0, 0, .1);
+  margin-bottom: -57px;
 }
 
-.item-wrapper:hover .btn-item-hover{
+.item-hover:hover .btn-item-hover{
   display: block;
 }
 
 .item-hover {
   display: none;
   position: absolute;
+  width: 100%;
 }
 
 
 .btn-item-hover{
-  display: inline-block;
-  padding: 8px 12px;
+  display: block;
+  width: 200px;
+  margin: 60px auto;
+  padding: 10px 12px;
 
   font-size: 18px;
   line-height: 24px;
@@ -709,8 +718,6 @@ body > input[type="radio"] {
 }
 
 
-
-
 .item {
   position: relative;
 }
@@ -730,17 +737,14 @@ body > input[type="radio"] {
   background-image: url("../img/hit.png");
 }
 
-.item-wrapper{
-  margin-right: 8px;
-}
 
-.item-wrapper:nth-child(n+3){
-  margin-right: 0px;
+.item-wrapper:nth-child(4n){
+  margin-right: 0;
 }
 
 .item-wrapper-inner {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .hit-price {
