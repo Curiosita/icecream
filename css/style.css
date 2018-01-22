@@ -387,6 +387,7 @@ ul {
 
 .cart {
   list-style: none;
+  position: relative;
 }
 
 .cart-link {
@@ -431,9 +432,33 @@ ul {
   background-repeat: no-repeat;
 }
 
-.cart-list {
+.cart-list-block {
   display: none;
+  position: absolute;
+  top: 36px;
+  right: 3px;
+  z-index: 1;
 }
+
+.cart-link-full:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.cart-link-full:hover .cart-list {
+  display: block;
+}
+
+.cart-list {
+  width: 248px;
+  height: 185px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 50px black;
+}
+
 
 .cart-text {
   margin-left: 10px;
@@ -1481,6 +1506,7 @@ input[type="checkbox"] + label {
   padding-left: 30px;
   vertical-align: top;
   cursor: pointer;
+
 }
 
 input[type="checkbox"] + label::before {
@@ -1491,17 +1517,38 @@ input[type="checkbox"] + label::before {
   left: 0;
   width: 23px;
   height: 23px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%234D4D4D' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E%0A");
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.5;
 }
 
+input[type="checkbox"]:hover + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1.0;
+}
+
 input[type="checkbox"]:checked + label::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%234D4D4D' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%234D4D4D' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E ");
+  background-image: url("../img/checked-hov.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.5;
+}
+
+input[type="checkbox"]:checked:hover + label::before {
+  background-image: url("../img/checked-hov.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1.0;
 }
 
 .btn-submit{
@@ -1547,9 +1594,10 @@ input[type="checkbox"]:checked + label::before {
 .pagination {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   position: relative;
   margin-top: 40px;
-  margin-left: 960px;
+
 }
 
 .pagination::before{
@@ -1558,7 +1606,7 @@ input[type="checkbox"]:checked + label::before {
   height: 12px;
   position: absolute;
   top: 8px;
-  left: -20px;
+  left: 920px;
   background-image: url("../img/icon-right-small-copy.png");
   background-repeat: no-repeat;
 }
@@ -1569,7 +1617,7 @@ input[type="checkbox"]:checked + label::before {
   height: 12px;
   position: absolute;
   top: 8px;
-  left: 130px;
+  left: 1150px;
   background-image: url("../img/icon-right-small.png");
   background-repeat: no-repeat;
 }
